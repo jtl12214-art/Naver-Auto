@@ -1,0 +1,19 @@
+{
+  "name": "trend-studio-node",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NAVER Trend Studio - Node.js Based Automation & Trend Analysis Platform",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n \"API,WEB\" -c \"cyan,magenta\" \"npm run dev -w @trend-studio/api\" \"npm run dev -w @trend-studio/web\"",
+    "dev:api": "npm run dev -w @trend-studio/api",
+    "dev:web": "npm run dev -w @trend-studio/web",
+    "build": "npm run build --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

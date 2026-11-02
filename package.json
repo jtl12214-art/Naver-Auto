@@ -1,0 +1,10 @@
+{
+  "name": "trend-studio-launcher",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Root forwarding scripts for NAVER Trend Studio",
+  "scripts": {
+    "dev": "npm run dev --prefix trend-studio-node",
+    "build": "npm run build --prefix trend-studio-node"
+  }
+}
